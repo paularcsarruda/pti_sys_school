@@ -18,7 +18,7 @@ import lombok.AllArgsConstructor;
 public class Aluno {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
