@@ -1,9 +1,8 @@
 package com.pti.backend.javaspringbackendpti.controllers;
-import org.springframework.stereotype.Service;
 
-import com.pti.backend.javaspringbackendpti.interfaces.AlunoDAO;
-import com.pti.backend.javaspringbackendpti.interfaces.FornecedorDAO;
-import com.pti.backend.javaspringbackendpti.interfaces.ProfessorDAO;
+import org.springframework.stereotype.Service;
+import com.pti.backend.javaspringbackendpti.interfaces.*;
+
 
 @Service
 public class CadastroService {
