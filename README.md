@@ -14,8 +14,7 @@ Repositório destinado a entrega do Projeto Integrador III do Senac. O grupo pos
 
 ## Descrição do Projeto
 
-Este é um projeto JavaScript/Typescript para cadastrar alunos, professores e fornecedores em um sistema de gerenciamento escolar. Ele fornece endpoints para cada tipo de entidade, permitindo que os dados sejam enviados e salvos no banco de dados.
-Funcionalidades
+Este é um projeto Node.js com Express que oferece uma API REST para cadastrar alunos, professores e fornecedores em um sistema de gerenciamento escolar. Ele fornece endpoints para cada tipo de entidade, permitindo que os dados sejam enviados e salvos no banco de dados.
 
 >
 >    - **Cadastro de Alunos**: Endpoint para cadastrar um novo aluno com os seguintes campos: nome, data de nascimento, CPF, endereço, e-mail e telefone.
@@ -27,27 +26,150 @@ Funcionalidades
 >    - **Consulta** dos Alunos, Professores e Fornecedores Cadastrados.
 >
 
-Tecnologias Utilizadas
+### Tecnologias Utilizadas
 
     - JavaScript/Typescript
     - Express
     - Prisma ORM
     - PostgreSQL
+    - HTML
+    - CSS
 
-### 1.ª Parte - Prototypo Desenvolvido no Figma
+### Sumário
 
-O Prototypo foi desenvolvido para representar o cadastro de diferentes tipos de pessoas em um sistema de uma universidade.
+- Protótipo Figma
+- Instalação
+- Configuração
+- Uso
+- Estrutura de Diretórios 
+- Rotas de Cadastro
+- Contribuição
+- Referências Bibiográficas
+- Licença
+  
+### Protótipo Figma
 
- <img width="1728" alt="Captura de Tela 2024-05-20 às 10 04 46 AM" src="https://github.com/paularcsarruda/pti_sys_school/assets/122739036/7e21d5ff-d94a-4cd8-a6af-8166aaf37778">
- 
+>
+O protótipo foi desenvolvido para representar o cadastro de alunos, professores e fornecedores de uma universidade. A interface do usuário foi projetada para ser intuitiva e fácil de navegar, utilizando modais que permitem abrir exclusivamente o cadastro selecionado ao clicar em uma opção. 
+>
 
- <img width="1482" alt="Captura de Tela 2024-05-20 às 10 05 28 AM" src="https://github.com/paularcsarruda/pti_sys_school/assets/122739036/c478c2b1-74c6-4723-a3ba-f811fef6f181">
+<img width="1830" alt="Captura de Tela 2024-05-20 às 3 59 43 PM" src="https://github.com/paularcsarruda/pti_sys_school/assets/122739036/c03ea11e-a83a-4cae-b90d-cc97d8c72f4d">
 
-### 2.ª Parte - Desenvolvimento das Interfaces
+<img width="1821" alt="Captura de Tela 2024-05-20 às 3 59 24 PM" src="https://github.com/paularcsarruda/pti_sys_school/assets/122739036/821e90f3-95e3-4e2a-a0cb-4d5d60bb12cc">
+
+
+### Instalação 
+
+Instruções para configurar o ambiente e instalar as dependências do projeto.
+
+```
+git clone https://github.com/RenanGava/pti_sys_school.git
+cd pti_sys_school
+npm install
+```
+
+### Configuração
+
+Detalhes sobre como configurar as variáveis de ambiente e outras configurações necessárias para executar o projeto.
+
+Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
+
+```
+PORT=3000
+DATABASE_URL=your-database-url
+```
+
+A aplicação estará disponível em http://localhost:3000.
+
+### Uso
+
+Instruções sobre como iniciar e usar o projeto.
+
+Para iniciar o servidor de desenvolvimento:
+
+```
+npm start
+```
+
+### Estrutura de Diretórios
+
+Descrição da estrutura de diretórios do projeto.
+
+```
+nome-do-projeto/
+├── node_modules/
+├── prisma/
+├── src/
+│   ├── controllers/
+│   ├── interfaces/
+│   ├── models/
+│   ├── public/
+│   │   ├── css/
+|   |   ├── assets/
+|   |   ├── viewa/
+│   │   └── js/
+│   ├── services/
+│   └── views/
+├── tests/
+├── .env
+├── .gitignore
+├── app.js
+├── package.json
+└── README.md
+```
+
+### Rotas de Cadastro
+
+#### Usuários
+
+- `POST /users/register` - Registra um novo usuário.
+    - Request Body:
+    ```
+    {
+      "name": "Nome do Usuário",
+      "email": "email@exemplo.com",
+      "password": "senha123"
+    }
+    ```
+    - Response:
+    ```
+    {
+      "message": "Usuário registrado com sucesso",
+      "user": {
+        "id": 1,
+        "name": "Nome do Usuário",
+        "email": "email@exemplo.com"
+      }
+    }
+    ```
+
+- `GET /users/:id` - Retorna detalhes de um usuário específico.
+    -Response:
+  ```
+    {
+      "id": 1,
+      "name": "Nome do Usuário",
+      "email": "email@exemplo.com"
+    }
+  ```
+
+### Contribuição
+
+Regras e diretrizes para contribuir com o projeto.
+
+1. Fork o repositório.
+2. Crie uma branch para sua feature (git checkout -b feature/nova-feature).
+3. Commit suas mudanças (git commit -m 'Adiciona nova feature').
+4. Faça o push para a branch (git push origin feature/nova-feature).
+5. Abra um Pull Request.
 
 ### Referências Bibliograficas
 
 >
 > - Guia Markdown, acesso em: https://www.markdownguide.org/basic-syntax/
 > - Senac - Projeto Integrador
->
+>   
+
+### Licença
+Informações sobre a licença do projeto.
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
