@@ -14,7 +14,7 @@ Repositório destinado a entrega do Projeto Integrador III do Senac. O grupo pos
 
 ## Descrição do Projeto
 
-Este é um projeto Java Spring Boot que oferece uma API REST para cadastrar alunos, professores e fornecedores em um sistema de gerenciamento escolar. Ele fornece endpoints para cada tipo de entidade, permitindo que os dados sejam enviados e salvos no banco de dados.
+Este é um projeto JavaScript/Typescript para cadastrar alunos, professores e fornecedores em um sistema de gerenciamento escolar. Ele fornece endpoints para cada tipo de entidade, permitindo que os dados sejam enviados e salvos no banco de dados.
 Funcionalidades
 
 >
