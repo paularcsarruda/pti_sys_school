@@ -1,4 +1,4 @@
-<img src="https://github.com/paularcsarruda/pti_sys_school/assets/122739036/3bab0d2e-4155-47f4-bb9b-d513237cc435" width=300px>
+<img src="https://github.com/paularcsarruda/pti_sys_school/assets/122739036/3bab0d2e-4155-47f4-bb9b-d513237cc435" width=250px>
 
 # Projeto Integrador - Grupo 22
 
